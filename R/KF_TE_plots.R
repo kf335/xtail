@@ -96,13 +96,3 @@ plotTE_FCs <- function(object, log2FC.cutoff = 1, cex=1, xlim, ylim, ..., cex.la
 
   legend("bottomright", legend=leg,pch=pch, col=leg.col, bty="n",cex=cex)
 }
-
-#=====================================================================================================================
-#=====================================================================================================================
-
-# KF Work 9.6.16
-if(!exists("results_arabidopsis_xtail_analysis_17C_28C_raw_min50_100000")){
-  load("~/Documents/Betty_Plant_Data/Arabidopsis/arabidopsis_xtail_analysis_17C_28C_attempt1.RData")
-  load("~/Documents/Betty_Plant_Data/Arabidopsis/arabidopsis_xtail_analysis_17C_4C_attempt1.RData")
-  plotTE_FCs(arabidopsis_xtail_analysis_17C_28C,main="17 C vs. 28 C")
-}
